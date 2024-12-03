@@ -48,13 +48,13 @@ resource "aws_security_group" "allow_user_to_connect" {
   }
 }
 
-resource "aws_instance" "testinstance7" {
+resource "aws_instance" "test-instance" {
   ami             = var.ami_id #ubuntu
   instance_type   = var.instance_type #free tier
   key_name        = aws_key_pair.deployer-2.key_name #key
   security_groups = [aws_security_group.allow_user_to_connect.name] #SG
   tags = {
-    Name = "Terra-Automate-4" #Name
+    Name = "Terra-Automate-7" #Name
   }
   root_block_device {
     volume_size = 10 

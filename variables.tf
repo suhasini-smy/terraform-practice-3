@@ -15,7 +15,7 @@ variable "instance_type" {
 
 variable "my_enviroment" {
   description = "Instance type for the EC2 instance"
-  default     = "dev"
+  default     = "dev-demo"
 }
 
 variable "dynamo_table_name" {
